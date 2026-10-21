@@ -50,16 +50,31 @@ ul {
     margin-right: auto;
 }
 
+.section-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 /* #endregion common */
 
 /* #region header */
 
-.page-header {
-
+.page-header .container{
+    display: flex;
+    gap: 90px;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
 }
 
 .page-nav {
-
+   display: flex;
+   flex-grow: 1;
+   justify-content: space-between;
 }
 
 .main-logo {
@@ -67,10 +82,14 @@ ul {
     font-size: 18px;
     line-height: 1.11;
     letter-spacing: -0.03em;
+    display: flex;
+    align-items: center;
 }
 
 .nav-list {
-
+    display: flex;
+    column-gap: 24px;
+    
 }
 
 .nav-list-item {
@@ -78,10 +97,12 @@ ul {
 }
 
 .nav-link {
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: -0.02em;
+    padding: 20px 0;
 }
 
 .nav-link:hover, 
@@ -90,7 +111,8 @@ ul {
 }
 
 .socials-list {
-
+    display: flex;
+    column-gap: 24px;
 }
 
 .socials-list-item {
@@ -137,7 +159,8 @@ ul {
 }
 
 .benefits-list {
-
+    display: flex;
+    justify-content: space-between;
 }
 
 .visually-hidden {
@@ -178,20 +201,30 @@ ul {
 /* #region sensation */
 
 .section-sensation {
-    padding-top: 77px;
-    padding-bottom: 55px;
+    padding: 77px 55px 0;
 }
 
 .sensation-title {
-
+    max-width: 450px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 28px;
 }
 
 .sensation-paragraph {
-
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-align: center;
+    max-width: 483px;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 .sensation-list {
-
+    display: flex;
+    justify-content: space-between;
 }
 
 .sensation-item {
@@ -231,7 +264,7 @@ ul {
 }
 
 .made-list {
-
+   
 }
 
 .made-item {
