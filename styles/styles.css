@@ -1,0 +1,337 @@
+/* font-family: "Montserrat",
+sans-serif; */
+
+/* #region common */
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #111111;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+img {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    max-width: 1166px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* #endregion common */
+
+/* #region header */
+
+.page-header {
+
+}
+
+.page-nav {
+
+}
+
+.main-logo {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.03em;
+}
+
+.nav-list {
+
+}
+
+.nav-list-item {
+
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+}
+
+.nav-link:hover, 
+.nav-link:focus{
+    color: #FD9222;
+}
+
+.socials-list {
+
+}
+
+.socials-list-item {
+
+}
+
+.socials-link {
+
+}
+
+/* #endregion header */   
+
+/* #region hero */
+
+
+.section-hero {
+    padding-bottom: 55px;
+}
+
+.title-hiro {
+
+}
+
+.hero-list {
+
+}
+
+.hero-item {
+
+}
+
+.scroll-to-down {
+
+}
+
+/* #endregion hero */
+
+/* #region benefits */
+
+.section-benefits {
+    background-color: #1E1821;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.benefits-list {
+
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.benefits-item {
+
+}
+
+.benefits-img {
+
+}
+
+.benefits-title {
+
+}
+
+.benefits-paragraph {
+
+}
+
+.coste {
+
+}
+
+/* #endregion benefits */
+
+/* #region sensation */
+
+.section-sensation {
+    padding-top: 77px;
+    padding-bottom: 55px;
+}
+
+.sensation-title {
+
+}
+
+.sensation-paragraph {
+
+}
+
+.sensation-list {
+
+}
+
+.sensation-item {
+
+}
+
+.sensation-img {
+
+}
+
+.sensation-title {
+
+}
+
+.akcent {
+    color: #FD9222;
+}
+
+/* #endregion sensation */
+
+/* #region made */
+
+.setion-made {
+ padding: 55px 0;
+}
+
+.made-title-img {
+
+}
+
+.made-img {
+
+}
+
+.made-title-list {
+
+}
+
+.made-list {
+
+}
+
+.made-item {
+
+}
+
+/* #endregion made */
+
+/* #region loved */
+
+.section-loved {
+    padding: 55px 0;
+}
+
+.loved-title {
+
+}
+
+.loved-list {
+
+}
+
+.loved-item {
+
+}
+
+.loved-item-img {
+
+}
+
+.loved-item-paragraphe {
+
+}
+
+.loved-btn {
+
+}
+
+/* #endregion loved */
+
+/* #region footer */
+
+.footer-page {
+    background-color: #1E1821;
+    color: #fff;
+}
+
+.footer-paragraph {
+
+}
+
+.footer-address {
+
+}
+
+.footer-address-paragraph {
+
+}
+
+.footer-adrdress-list {
+
+}
+
+.footer-address-item {
+
+}
+
+.footer-address-link {
+
+}
+
+.footer-list-nav {
+
+}
+
+.footer-item-nav {
+
+}
+
+.footer-nav-link {
+
+}
+
+.footer-form {
+
+}
+
+.footer-form-input {
+
+}
+
+.footer-form-btn {
+
+}
+
+/* #endregion footer */
+
+
+
+
+
+
+

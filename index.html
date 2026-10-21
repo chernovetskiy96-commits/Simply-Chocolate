@@ -3,60 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>General</title>
+    <title>Simply chocolate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
     <!-- #region header -->
-    <header>
-      <nav>
-        <a href="#">
-          SIMPLY CHOCOLATE
-          <img
-            src="./images/icons/chocolate-svgrepo-com.svg"
-            alt="logo"
-            width="24"
-        /></a>
-
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">How it's made</a>
-          </li>
-          <li>
-            <a href="#">Chocolate it's loved</a>
-          </li>
-        </ul>
-
-        <ul>
-          <li>
-            <a href="" target="_blank">
-              <img
-                src="./images/icons/instagram-svgrepo-com.svg"
-                alt="instagram"
-                width="24"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="" target="_blank">
-              <img
-                src="./images/icons/twitter-svgrepo-com.svg"
-                alt="twitter"
-                width="24"
-              />
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <header class="page-header">
+      <div class="container">
+        <nav class="page-nav">
+          <a href="#" class="main-logo">
+            <span class="text-italic">SIMPLY</span> CHOCOLATE
+            <img
+              src="./images/icons/chocolate-svgrepo-com.svg"
+              alt="logo"
+              width="24"
+          /></a>
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#" class="nav-link">How it's made</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#" class="nav-link">Chocolate it's loved</a>
+            </li>
+          </ul>
+          <ul class="socials-list">
+            <li class="socials-list-item">
+              <a href="" target="_blank" class="socials-link">
+                <img
+                  src="./images/icons/instagram-svgrepo-com.svg"
+                  alt="instagram"
+                  width="24"
+                />
+              </a>
+            </li>
+            <li class="socials-list-item" class="socials-link">
+              <a href="" target="_blank">
+                <img
+                  src="./images/icons/twitter-svgrepo-com.svg"
+                  alt="twitter"
+                  width="24"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
+    <!-- #endregion header -->
+
+    <!-- #region hero -->
     <main>
-      <section>
-        <h1>Good things come in chocolate.</h1>
-        <button type="button">Buy Now</button>
-        <button type="button">How it's made</button>
-        <a href="#">
+      <section class="section-hero container">
+        <h1 class="title-hiro">Good things come in chocolate.</h1>
+        <ul class="hero-list">
+          <li class="hero-item">
+            <button type="button">Buy Now</button>
+          </li>
+          <li class="hero-item">
+            <button type="button">How it's made</button>
+          </li>
+        </ul>
+
+        <a href="#" class="scroll-to-down">
+          scroll-down
           <img
             src="./images/icons/scroll-svgrepo-com.svg"
             alt="scroll-down"
@@ -64,126 +89,145 @@
           />
         </a>
       </section>
-      <!-- #endregion header  -->
+      <!-- #endregion hero -->
 
       <!-- #region benefits -->
-      <section>
-        <h2>Benefits</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/icons/main-icons/darcchoc.svg"
-              alt="darckmatter"
-              width="180"
-            />
-            <h3>Dark Matter</h3>
-            <p>70% dark chocolate · deep & bold</p>
-            <p class="coste">€ 5.50</p>
-          </li>
 
-          <li>
-            <img
-              src="./images/icons/main-icons/saltycaramel.svg"
-              alt="saltycaramel"
-              width="180"
-            />
-            <h3>Salty Caramel</h3>
-            <p>Creamy milk chocolate · sweet & salty</p>
-            <p class="coste">€ 5.50</p>
-          </li>
-
-          <li>
-            <img
-              src="./images/icons/main-icons/berryblis.svg"
-              alt="barrybliss"
-              width="180"
-            />
-            <h3>Berry Bliss</h3>
-            <p>Dark chocolate & berries · fruity</p>
-            <p class="coste">€ 5.50</p>
-          </li>
-        </ul>
+      <section class="section-benefits">
+        <div class="container">
+          <h2 class="visually-hidden">Benefits</h2>
+          <ul class="benefits-list">
+            <li class="benefits-item">
+              <img
+                class="benefits-img"
+                src="./images/icons/main-icons/darcchoc.svg"
+                alt="darckmatter"
+                width="180"
+              />
+              <h3 class="benefits-title">Dark Matter</h3>
+              <p class="benefits-paragraph">70% dark chocolate · deep & bold</p>
+              <p class="coste">€ 5.50</p>
+            </li>
+            <li class="benefits-item">
+              <img
+                class="benefits-img"
+                src="./images/icons/main-icons/saltycaramel.svg"
+                alt="saltycaramel"
+                width="180"
+              />
+              <h3 class="benefits-title">Salty Caramel</h3>
+              <p class="benefits-paragraph">
+                Creamy milk chocolate · sweet & salty
+              </p>
+              <p class="coste">€ 5.50</p>
+            </li>
+            <li class="benefits-item">
+              <img
+                class="benefits-img"
+                src="./images/icons/main-icons/berryblis.svg"
+                alt="barrybliss"
+                width="180"
+              />
+              <h3 class="benefits-title">Berry Bliss</h3>
+              <p class="benefits-paragraph">
+                Dark chocolate & berries · fruity
+              </p>
+              <p class="coste">€ 5.50</p>
+            </li>
+          </ul>
+        </div>
       </section>
+
       <!-- #endregion benefits -->
 
       <!-- #region sensation -->
-      <section>
-        <h2>IT ALL ADDS UP TO ONE EXECEPTIONAL TASTE SENSATION</h2>
-        <p>
+      <section class="section-sensation container">
+        <h2 class="sensation-title">
+          IT ALL ADDS UP TO ONE EXECEPTIONAL
+          <span class="akcent">TASTE</span> SENSATION
+        </h2>
+        <p class="sensation-paragraph">
           test test test test test test test test test test test test test test
           test test test test test test test test test
         </p>
 
-        <ul>
-          <li>
+        <ul class="sensation-list">
+          <li class="sensation-item">
             <img
+              class="sensation-img"
               src="./images/sensation-section-image/chocolate_PNG97212.png"
               alt="Milk chololate"
               height="160"
               width="206"
             />
-            <h3>Milk chololate</h3>
+            <h3 class="sensation-title">Milk chololate</h3>
           </li>
-          <li>
+          <li class="sensation-item">
             <img
+              class="sensation-img"
               src="./images/sensation-section-image/milk_PNG12714.png"
               alt="Milk"
               height="160"
               width="206"
             />
-            <h3>Milk</h3>
+            <h3 class="sensation-title">Milk</h3>
           </li>
-          <li>
+          <li class="sensation-item">
             <img
+              class="sensation-img"
               src="./images/sensation-section-image/hazelnut_PNG21.png"
               alt="Nuts"
               height="160"
               width="206"
             />
-            <h3>Nuts</h3>
+            <h3 class="sensation-title">Nuts</h3>
           </li>
-          <li>
+          <li class="sensation-item">
             <img
+              class="sensation-img"
               src="./images/sensation-section-image/chocolate_PNG97212.png"
               alt="Semi-weet chocolate"
               height="160"
               width="206"
             />
-            <h3>Semi-weet chocolate</h3>
+            <h3 class="sensation-title">Semi-weet chocolate</h3>
           </li>
         </ul>
       </section>
       <!-- #endregion sensation -->
 
       <!-- #region made -->
-      <section>
-        <h2>How it's made?</h2>
+      <section class="setion-made container">
+        <h2 class="made-title-img">
+          How it's <span class="akcent">made?</span>
+        </h2>
         <img
+          class="made-img"
           src="./images/made section images/made chocolate.jpeg"
           alt="made-chokolate"
           height="400"
           width="600"
         />
-        <h3>
+        <h3 class="made-title-list">
           Try our chocletes today and discover the perfet balance of flavor
         </h3>
-        <ul>
-          <li>
+        <ul class="made-list">
+          <li class="made-item">
             Text text Text text Text text Text text Text text Text text Text
             text Text text Text text Text text Text text Text text Text text
             Text text Text text
           </li>
-          <li>
+          <li class="made-item">
             Text text Text text Text text Text text Text text Text text Text
             text Text text Text text Text text Text text Text text Text text
             Text text Text text
           </li>
-          <li>
+          <li class="made-item">
             Text text Text text Text text Text text Text text Text text Text
             text Text text Text text Text text Text text Text text Text text
             Text text Text text
           </li>
-          <li>
+          <li class="made-item">
             Text text Text text Text text Text text Text text Text text Text
             text Text text Text text Text text Text text Text text Text text
             Text text Text text
@@ -193,68 +237,97 @@
       <!-- #endregion made -->
 
       <!-- #region loved -->
-      <section>
-        <h2>Chocolate is loved</h2>
-        <ul>
-          <li>
-            <img src="./images/Camila2.jpg" alt="Victoria Duborchanka" width="20" height="20"/>
-            <h3>Victoria Duborchanka</h3>
-            <p>
+      <section class="section-loved container">
+        <h2 class="loved-title">Chocolate is loved</h2>
+        <ul class="loved-list">
+          <li class="loved-item">
+            <img
+              class="loved-img"
+              src="./images/Camila2.jpg"
+              alt="Victoria Duborchanka"
+              width="120"
+              height="120"
+            />
+            <h3 class="loved-item-img">Victoria Duborchanka</h3>
+            <p class="loved-item-paragraphe">
               Text text text text text text text text text text text text text
               text text text text text text text
             </p>
           </li>
-          <li>
-            <img src="./images/Daniel2.jpg" alt="Nazar Babenko" width="20" height="20"/>
-            <h3>Nazar Babenko</h3>
-            <p>
+          <li class="loved-item">
+            <img
+              class="loved-img"
+              src="./images/Daniel2.jpg"
+              alt="Nazar Babenko"
+              width="120"
+              height="120"
+            />
+            <h3 class="loved-item-img">Nazar Babenko</h3>
+            <p class="loved-item-paragraphe">
               Text text text text text text text text text text text text text
               text text text text text text text
             </p>
           </li>
-          <li>
-            <img src="./images/Tom2.jpg" alt="Olena Petrychenko" width="20" height="20"/>
-            <h3>Olena Petrychenko</h3>
-            <p>
+          <li class="loved-item">
+            <img
+              class="loved-img"
+              src="./images/Tom2.jpg"
+              alt="Olena Petrychenko"
+              width="120"
+              height="120"
+            />
+            <h3 class="loved-item-img">Olen Petrychenko</h3>
+            <p class="loved-item-paragraphe">
               Text text text text text text text text text text text text text
               text text text text text text text
             </p>
           </li>
         </ul>
-        <button type="button">Leave a review</button>
+        <button class="loved-btn" type="button">Leave a review</button>
       </section>
-      <!-- #endregion loved -->
     </main>
+    <!-- #endregion loved -->
 
-    <footer>
-      <p>Chocolate delicious cure for a bad day</p>
-      <address>
-        <p>Contacts us</p>
-        <ul>
-          <li><a href="tel:+380962438365">+38 (096) 243 83 65</a><br /></li>
-          <li>
-            <a href="mailto:info@simplychocolate.com"
-              >info@simplychocolate.com</a
-            ><br />
+    <!-- #region footer -->
+
+    <footer class="footer-page">
+      <div class="container">
+        <p class="footer-paragraph">Chocolate delicious cure for a bad day</p>
+        <address class="footer-address">
+          <p class="footer-address-paragraph">Contacts us</p>
+          <ul class="footer-adrdress-list">
+            <li class="footer-address-item">
+              <a class="footer-address-link" href="tel:+380962438365"
+                >+38 (096) 243 83 65</a
+              ><br />
+            </li>
+            <li class="footer-address-item">
+              <a
+                class="footer-address-link"
+                href="mailto:info@simplychocolate.com"
+                >info@simplychocolate.com</a
+              ><br />
+            </li>
+          </ul>
+        </address>
+        <hr />
+        <ul class="footer-list-nav">
+          <li class="footer-item-nav">
+            <a class="footer-nav-link" href="#">Home</a>
+          </li>
+          <li class="footer-item-nav">
+            <a class="footer-nav-link" href="#">How it's made</a>
+          </li>
+          <li class="footer-item-nav">
+            <a class="footer-nav-link" href="#">Chocolate it's loved</a>
           </li>
         </ul>
-      </address>
-      <hr />
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">How it's made</a>
-          </li>
-          <li>
-            <a href="#">Chocolate it's loved</a>
-          </li>
-        </ul>
-      <form">
-    <input type="email">
-  <button type="submit">Subscribe</button>
-</form>
+        <form class="footer-form">
+          <input class="footer-form-input" type="email" />
+          <button class="footer-form-btn" type="submit">Subscribe</button>
+        </form>
+      </div>
     </footer>
+    <!-- #endregion footer -->
   </body>
 </html>
