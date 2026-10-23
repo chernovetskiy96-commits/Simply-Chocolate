@@ -382,5 +382,96 @@
       </div>
     </footer>
     <!-- #endregion footer -->
+
+    <!-- #region popup -->
+
+    <div class="backdrop hide-popup">
+      <div class="popup-review">
+        <p class="popup-title">
+          Leave review about <span class="akcent">our chocolate!</span>
+        </p>
+        <button class="close-popup" type="button">
+          <svg class="close-popup-icon" width="16" height="16">
+            <use href="./images/sprite.svg#icon-close-black"></use>
+          </svg>
+        </button>
+
+        <form>
+          <div class="form-field-wrapper">
+            <label class="lable-field" for="username">Name</label>
+            <div class="field-wrapper">
+              <input
+                class="text-field"
+                type="text"
+                id="username"
+                name="username"
+              />
+              <svg class="field-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-name-form"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field-wrapper">
+            <label class="lable-field" for="email">Email</label>
+            <div class="field-wrapper">
+              <input
+                class="text-field"
+                type="email"
+                id="email"
+                name="useremail"
+              />
+              <svg class="field-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-mail-form"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-field-wrapper">
+            <label class="lable-field" for="usertel">Phone number</label>
+            <div class="field-wrapper">
+              <input
+                class="text-field"
+                type="tel"
+                id="usertel"
+                name="usertel"
+              />
+              <svg class="field-icon" width="16" height="16">
+                <use href="./images/sprite.svg#icon-phon-form"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-field-wrapper">
+            <label class="lable-field" for="comment">Comment</label>
+            <textarea
+              class="comment-textarea"
+              name="comment"
+              id="comment"
+              placeholder="Enter text"
+            ></textarea>
+          </div>
+          <div class="form-field-wrapper">
+            <input
+              class="policy-checkbox visually-hidden"
+              type="checkbox"
+              id="policy"
+              name="policy"
+              value="true"
+            />
+            <label class="policy-lable" for="policy">
+              <span class="custom-checkbox">
+                <svg width="10" height="10">
+                  <use href="./images/sprite.svg#icon-checkbox-icon"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="akcent policy-link" href="#">Privacy Policy</a></label
+            >
+          </div>
+          <button class="popup-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- #endregion popup -->
   </body>
 </html>
